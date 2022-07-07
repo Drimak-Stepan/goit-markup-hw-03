@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-перше дз
+# goit-markup-hw-02
+друге дз
