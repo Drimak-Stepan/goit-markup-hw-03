@@ -74,6 +74,7 @@ body {
     color: #2196F3;
     outline-color: #2196F3;
 }
+.current{color: #2196F3;}
 
 /*---------------decision-----*/
 
@@ -109,7 +110,8 @@ body {
 
 .decision-btn:hover,
 .decision-btn:focus{
-    backgroundr:#188CE8;
+    color: #FFFFFF;
+    backgroundr:#e8183b;
     outline-color: #2196F3;
 }
 
@@ -177,6 +179,22 @@ body {
     color: #757575;
     }
 
+
+
+    /*-------portfolio------*/
+.active-btn{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
 
     /*------footer-----*/
 
