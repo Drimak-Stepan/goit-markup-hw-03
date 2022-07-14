@@ -3,6 +3,8 @@
     --first-btn-color: #212121;
     --active-color:#2196F3;
     --accent-color:#757575;
+    --first-background: #FFFFFF;
+    --second-background:#F5F4FA;
 }
 body {
     font-family: Roboto, sans-serif;
@@ -36,6 +38,9 @@ body {
     letter-spacing: 0.03em;
     color:#000000;}
 
+    .cap{
+        background: var(--first-background);
+    }
 .cap-logo:focus{
     outline-color: var(--active-color);
 }
@@ -147,7 +152,7 @@ body {
 }
 
 .features,
-.examples{ background: #FFFFFF;}
+.examples{ background: var(--first-background)}
 
 .team-title{font-weight: 700;
     font-size: 36px;
@@ -157,7 +162,7 @@ body {
     color: var(--first-title-color);}
 
 .team{
-    background: #F5F4FA;
+    background:var(--second-background);
 }
 
 .team-subtitle{
@@ -188,7 +193,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--first-btn-color);
-    background: #F5F4FA;
+    background:var(--second-background);
     border-radius: 4px;
     border:1px solid #EEEEEE;
 }
