@@ -38,7 +38,7 @@ body {
     letter-spacing: 0.03em;
     color:#000000;}
 
-    .cap{
+.cap{
         background: var(--first-background);
     }
 .cap-logo:focus{
@@ -118,6 +118,7 @@ body {
 .decision-btn:hover,
 .decision-btn:focus{
     color: #FFFFFF;
+    background: #218ce4;
     outline-color: var(--active-color);
 }
 
@@ -136,7 +137,6 @@ body {
 }
 
 .features-text{
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -174,7 +174,6 @@ body {
     color: var(--first-title-color);   }
 
 .team-text{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -200,18 +199,11 @@ body {
 
 .filters-btn:hover,
 .filters-btn:focus{
-    font-family: inherit;;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.03em;
     color: #FFFFFF;
     background: var(--active-color);
     outline-color: var(--active-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;}
+}
 
 .services-title{
     font-weight: 700;
@@ -221,7 +213,6 @@ letter-spacing: 0.06em;
 color: var(--first-title-color);}
 
 .services-text{
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
