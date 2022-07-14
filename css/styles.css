@@ -75,8 +75,23 @@ body {
     outline-color: #2196F3;
 }
 
+/*---------------decision-----*/
 
-.hero-btn{
+.decision{
+    width: 1600px;
+    background: #2F303A;
+}
+
+.decision-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.decision-btn{
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -87,15 +102,123 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
-.hero-btn:hover,
-.hero-btn:focus{
+.decision-btn:hover,
+.decision-btn:focus{
     outline-color: #2196F3;
 }
 
-
-
-.hero-btn {
+.decision-btn {
     cursor: pointer;
 }
+
+.features-subtitle{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.features-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.examples-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.team-title{font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;}
+    
+.team-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    
+    }
+
+.team-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }
+
+
+    /*------footer-----*/
+
+.footer{
+    background: #2F303A;
+    }
+.footer-logo{
+    font-family:Raleway, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.footer-logo:focus{
+    outline-color: #2196F3;
+}
+.footer-logo span{    
+    color:#2196F3;
+}
+
+.footer-map{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;}
+
+.footer-email,
+.footer-tel{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-email:focus,
+.footer-email:hover{
+    color: #2196F3;
+    outline-color: #2196F3;
+}
+.footer-tel:focus,
+.footer-tel:hover{
+    color: #2196F3;
+    outline-color: #2196F3;
+}
+.footer-map:focus,
+.footer-map:hover{
+    color: #2196F3;
+    outline-color: #2196F3;}
