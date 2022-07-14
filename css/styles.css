@@ -1,6 +1,6 @@
 body {
     font-family: Roboto, sans-serif;
-    color:#212121;
+    color:#757575;
 }
 .list {
     list-style: none;
@@ -9,7 +9,7 @@ body {
 .link {
     text-decoration: none;
 }
-.hero-hidden { 
+.visually-hidden { 
     position: absolute; 
     width: 1px; 
     height: 1px; 
@@ -26,13 +26,19 @@ body {
 
 
 .header-logo{
-    font-family:'Raleway' sans-serif;
+    font-family:Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color:#000000;}
+
+.header-logo:focus{
+    outline-color: #2196F3;
+}
+.header-logo span{    
+    color:#2196F3;
 }
 
 .header-link{
@@ -45,8 +51,8 @@ body {
 .header-link:hover,
 .header-link:focus{
     color: #2196F3;
+    outline-color: #2196F3;
 }
-
 
 
 .header-email,
@@ -61,10 +67,12 @@ body {
 .header-email:focus,
 .header-email:hover{
     color: #2196F3;
+    outline-color: #2196F3;
 }
 .header-tel:focus,
 .header-tel:hover{
     color: #2196F3;
+    outline-color: #2196F3;
 }
 
 
@@ -83,7 +91,7 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus{
-
+    outline-color: #2196F3;
 }
 
 
