@@ -237,7 +237,6 @@ color: var(--first-title-color);}
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-
 .basement-logo:focus{
     outline-color: var(--active-color);
 }
