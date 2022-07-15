@@ -211,6 +211,11 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: var(--first-title-color);}
 
+.services-link:hover,:focus{
+    outline-color: var(--active-color);
+
+}
+
 .services-text{
     font-size: 16px;
     line-height: 1.88;
