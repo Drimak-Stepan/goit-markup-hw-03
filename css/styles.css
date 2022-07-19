@@ -6,6 +6,13 @@
     --first-background: #FFFFFF;
     --second-background:#F5F4FA;
 }
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding-left: 0;
+}
 body {
     font-family: Roboto, sans-serif;
     color:var(--accent-color);
@@ -28,6 +35,20 @@ body {
     clip: rect(0 0 0 0); 
     overflow: hidden; 
     }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    outline: 3px solid red;
+}
+
+.section{
+    padding-top: 94px ;
+    padding-bottom: 94px;
+}
+
 /*----------------cap----------*/
 .cap-logo{
     font-family:Raleway, sans-serif;
@@ -40,6 +61,9 @@ body {
 
 .cap{
     background: var(--first-background);
+    border: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
     }
 .cap-logo:focus{
     outline-color: var(--active-color);
@@ -85,7 +109,6 @@ body {
 /*---------------decision-----*/
 
 .decision{
-    width: 1600px;
     background: #2F303A;
 }
 
@@ -223,6 +246,9 @@ color: var(--first-title-color);}
     color:var(--accent-color);
 }
 
+.services-item{
+    border-bottom: 1px solid #EEEEEE;
+}
 /*------basement-----*/
 
 .basement{
