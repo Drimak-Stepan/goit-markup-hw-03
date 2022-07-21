@@ -17,6 +17,11 @@ body {
     font-family: Roboto, sans-serif;
     color:var(--accent-color);
 }
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -39,8 +44,10 @@ body {
 .container {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     outline: 3px solid red;
 }
 
@@ -51,6 +58,9 @@ body {
 
 /*----------------cap----------*/
 .cap-logo{
+    display: block;
+    margin-right: 93px;
+   /* padding: 22px 6px;*/
     font-family:Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -59,11 +69,15 @@ body {
     letter-spacing: 0.03em;
     color:#000000;}
 
-.cap > .container {
+.cap > .cap-container {
+    display: flex;
+    align-items: center;
+}
+.cap-list{
     display: flex;
 }
-.cap-nav{
-    display: flex;
+.cap-item:not(:last-child){
+    margin-right: 50px;
 }
 
 .cap{
@@ -80,6 +94,7 @@ body {
 }
 
 .cap-link{
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -92,8 +107,15 @@ body {
     outline-color: var(--active-color);
 }
 
+
+.cap-listtoo{
+    display: flex;
+    margin-left: auto;
+}
+
 .cap-email,
 .cap-tel{
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -117,9 +139,15 @@ body {
 
 .decision{
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .decision-title{
+    min-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -129,6 +157,9 @@ body {
     color: #FFFFFF;
 }
 .decision-btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -155,8 +186,16 @@ body {
 .filters-btn {
     cursor: pointer;
 }
+.features-items{
+    display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+  min-width: 270px;
+}
 
 .features-subtitle{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -171,7 +210,16 @@ body {
     letter-spacing: 0.03em;
     color:var(--accent-color);
 }
+
+.examples {
+    padding-top: 0;
+}
+
 .examples-title{
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 366px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -180,10 +228,24 @@ body {
     color: var(--first-title-color);
 }
 
+.examples-items {
+    display: flex;
+}
+
+.examples-item:not(:last-child) {
+    margin-right: 30px;
+    min-width: 370px;
+}
 .features,
 .examples{ background: var(--first-background)}
 
-.team-title{font-weight: 700;
+.team-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    min-width: 264px;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17px;
     text-align: center;
@@ -195,6 +257,7 @@ body {
 }
 
 .team-subtitle{
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -209,6 +272,28 @@ body {
     letter-spacing: 0.03em;
     color:var(--accent-color);
     }
+
+.team-items{
+    display: flex;
+}
+    
+.team-item:not(:last-child) {
+        margin-right: 30px;
+        min-width: 270px; 
+    } 
+
+.team-item{
+    padding-bottom: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+} 
+.team-item > img {
+    margin-bottom: 30px;
+}
+.team-subtitle{
+    margin-bottom: 10px;
+}    
 
     /*-------portfolio------*/
 
@@ -259,9 +344,17 @@ color: var(--first-title-color);}
 /*------basement-----*/
 
 .basement{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
+
+
+
+
 .basement-logo{
+    display: block;
+    margin-bottom: 20px;
     font-family:Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -278,6 +371,8 @@ color: var(--first-title-color);}
 }
 
 .basement-map{
+    display: block;
+    margin-bottom: 9px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -287,12 +382,16 @@ color: var(--first-title-color);}
 
 .basement-email,
 .basement-tel{
+    display: block;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.6);
+}
+.basement-email{
+    margin-bottom: 9px;
 }
 
 .basement-email:focus,
