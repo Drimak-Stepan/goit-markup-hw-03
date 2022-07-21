@@ -20,6 +20,8 @@ body {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .list {
@@ -48,7 +50,7 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 3px solid red;
+    /*outline: 3px solid red;*/
 }
 
 .section{
@@ -60,7 +62,8 @@ img {
 .cap-logo{
     display: block;
     margin-right: 93px;
-   /* padding: 22px 6px;*/
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family:Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -83,8 +86,6 @@ img {
 .cap{
     background: var(--first-background);
     border: 1px solid #ECECEC;
-    padding-top: 24px;
-    padding-bottom: 25px;
     }
 .cap-logo:focus{
     outline-color: var(--active-color);
@@ -95,6 +96,7 @@ img {
 
 .cap-link{
     display: block;
+    padding: 22px 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -116,6 +118,7 @@ img {
 .cap-email,
 .cap-tel{
     display: block;
+    padding: 22px 6px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
@@ -160,6 +163,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding: 10px 32px;
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -282,15 +286,17 @@ img {
         min-width: 270px; 
     } 
 
-.team-item{
+.team-suit{
+    padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.team-item{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 } 
-.team-item > img {
-    margin-bottom: 30px;
-}
+
 .team-subtitle{
     margin-bottom: 10px;
 }    
@@ -299,7 +305,7 @@ img {
 
 .filters-btn{
     display: block;
-    padding-top: 22px 6px;
+    padding: 6px 22px;
     margin-bottom: 50px;
     font-family:inherit;;
     font-style: normal;
@@ -339,10 +345,10 @@ img {
 }
 .services-title{
     font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--first-title-color);}
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--first-title-color);}
 
 .services-link {
     display: block;
@@ -351,7 +357,9 @@ color: var(--first-title-color);}
     outline-color: var(--active-color);
 
 }
-
+.services-suite{
+    padding: 20px 24px;
+}
 .services-text{
     font-size: 16px;
     line-height: 1.88;
@@ -360,7 +368,7 @@ color: var(--first-title-color);}
 }
 
 .services-item{
-/*width: calc((100% - 60px) / 9)*/
+  width: calc((100% - 60px) / 3);
     border-bottom: 1px solid #EEEEEE;
 }
 /*------basement-----*/
@@ -375,7 +383,8 @@ color: var(--first-title-color);}
 
 
 .basement-logo{
-    display: block;
+    display: flex;
+    display: inline-block;
     margin-bottom: 20px;
     font-family:Raleway, sans-serif;
     font-style: normal;
@@ -391,10 +400,19 @@ color: var(--first-title-color);}
 .basement-logo span{    
     color:var(--active-color);
 }
+.basement-items{
+    display: inline-block;}
+
+.basement-item{
+    display: flex;
+    
+}
+.basement-item:not(:last-child){
+    margin-bottom: 9px;}
 
 .basement-map{
     display: block;
-    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -412,9 +430,7 @@ color: var(--first-title-color);}
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.6);
 }
-.basement-email{
-    margin-bottom: 9px;
-}
+
 
 .basement-email:focus,
 .basement-email:hover{
