@@ -59,6 +59,13 @@ body {
     letter-spacing: 0.03em;
     color:#000000;}
 
+.cap > .container {
+    display: flex;
+}
+.cap-nav{
+    display: flex;
+}
+
 .cap{
     background: var(--first-background);
     border: 1px solid #ECECEC;
